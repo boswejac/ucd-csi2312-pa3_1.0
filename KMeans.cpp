@@ -128,5 +128,12 @@ void KMeans::letsCluster() {
 
 
    };
+    std::ofstream myFile("output.txt");
+    for(int i = 0; i< K;i++){
+
+        myFile << getClusters()[i] << std::endl;
+        //std::cout << algo.getClusters()[i].getCentroid() << std::endl;
+    }
+
 
 };
