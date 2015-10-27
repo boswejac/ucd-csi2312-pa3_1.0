@@ -1,5 +1,15 @@
 COMPILER:  Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
 
+UPDATE: 10-26
+Kmeans implementation added and clustering is operational for any number of clusters, any number of points, and any size values
+
+HOW TO USE:
+input file is points.txt, which can contain any number of points (n dimensionality)
+construct an initial cluster like this: Cluster initialClust()
+simply construct a Kmeans object using "Kmeans objectName(k)" where k is the number of desired clusters
+initialize Kmeans by calling "objectName.initialize(initialClust,"points.txt")"
+iterate the clustering algorithm by calling "objectName.letsCluster()"
+a clustered points file will be produced called "output.txt"
 
 UPDATE: 9-22
 Testing was mostly successful with a few minor modifications.
