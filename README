@@ -1,0 +1,36 @@
+COMPILER:  Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+
+
+UPDATE: 9-22
+Testing was mostly successful with a few minor modifications.
+main.cpp updated to reflect tests.
+dynamic nodes handled more efficiently
+
+
+Included are Class definition and implementations for two classes:
+
+Point:
+-has two private variables
+    -dim, an int that holds the number of dimensions
+    -*pArray, a pointer to a list of double values
+-all operators are overwritten
+-has accessor and mutator functions for the two private variables
+
+AND
+
+Cluster:
+-has two private variables
+    -size, an int that holds the size of the cluster
+    -points, a pointer to a Struct object
+        -Above Struct object has two members and collectively forms a singly-linked list:
+            -p, a pointer to a Point object
+            -next, a pointer to an LNode, or the next struct object in the SLL
+-all operators are overwritten
+-has accessor functions for private variables
+
+
+
+DRAWBACKS:
+-I believe that some of my overwritten operators mishandle pointers and produce erroneous Clusters.
+-I did not finish in time to test all of the code, so it certainly has errors.
+-No comments (SORRY!!!!)
